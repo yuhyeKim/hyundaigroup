@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성중공업 웹사이트에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="css/billboard.css" type="text/css">
+    <link rel="stylesheet" href="css/insight.min.css" type="text/css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.smoothwheel.js"></script>
+    <script src="js/billboard.pkgd.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/core.js"></script>
+    <script>
+        $(function() {
+
+
+            var chart = bb.generate({
+                title: {
+                    text: ""
+                },
+                data: {
+                    json: {
+                        "시가": [5490, 5400, 5270, 5480, 5560, 5540, 5540, 5510, 5420, 5440, 5420, 5230, 5200, 5050, 5150, 5220, 5330, 5320],
+                        x: ["09-07-2020 00:00", "09-08-2020 00:00", "09-09-2020 00:00", "09-10-2020 00:00", "09-14-2020 00:00", "09-15-2020 00:00", "09-15-2020 00:00", "09-16-2020 00:00", "09-17-2020 00:00", "09-18-2020 00:00", "09-21-2020 00:00", "09-22-2020 00:00", "09-23-2020 00:00", "09-24-2020 00:00", "09-25-2020 00:00", "09-28-2020 00:00", "09-29-2020 00:00", "10-05-2020 00:00"]
+                    },
+                    x: "x",
+                    type: "area",
+                    xFormat: "%m-%d-%Y %H:%M"
+                },
+                area: {
+                    linearGradient: true
+                },
+                axis: {
+                    x: {
+                        tick: {
+                            fit: false,
+                            multiline: false,
+                            autorotate: true,
+                            rotate: 0,
+                            culling: false,
+                            count: 18,
+                            format: /*%Y년*/ "%m월 %d일"
+                        },
+                        type: "timeseries"
+                    }
+                },
+                bindto: "#stock_chart"
+            });
+
+            chart.axis.range({ // Y축 차트 시작값 조정
+                min: {
+                    /*
+                                        x: 0,*/
+                    y: 5050,
+                    /*y2: 0*/
+                }
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+
+
+        <!--************************************************* HEADER ******************************************************-->
+        <header class="header_wrap">
+            <h1 class="header_logo"><a href="/"><img src="images/logo_header.png" alt="상단로고"></a></h1>
+            <nav>
+                <a class="ham_menu" href="#">
+                    <span class="ham_line"></span>
+                    <span class="ham_line"></span>
+                    <span class="ham_line"></span>
+                </a>
+                <ul class="gnb">
+                    <li>
+                        <a class="menu" href="#">회사소개</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">기업정보</a></li>
+                            <li><a class="sub_menu" href="#">CEO</a></li>
+                            <li><a class="sub_menu" href="#">거제조선소 소개</a></li>
+                            <li><a class="sub_menu" href="#">사업장안내</a></li>
+                            <li><a class="sub_menu" href="#">내방신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">제품 / 기술</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">조선/해양</a></li>
+                            <li><a class="sub_menu" href="#">기술개발</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">투자정보</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">재무정보</a></li>
+                            <li><a class="sub_menu" href="#">주가정보</a></li>
+                            <li><a class="sub_menu" href="#">IR자료실</a></li>
+                            <li><a class="sub_menu" href="#">지배구조</a></li>
+                            <li><a class="sub_menu" href="#">공시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">PR센터</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">뉴스</a></li>
+                            <li><a class="sub_menu" href="#">선박기초상식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">인재채용</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">채용공고</a></li>
+                            <li><a class="sub_menu" href="#">입사지원가이드</a></li>
+                            <li><a class="sub_menu" href="#">인사제도</a></li>
+                            <li><a class="sub_menu" href="#">채용문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">지속가능경영</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">안전경영</a></li>
+                            <li><a class="sub_menu" href="#">준법경영</a></li>
+                            <li><a class="sub_menu" href="#">윤리경영</a></li>
+                            <li><a class="sub_menu" href="#">나눔경영</a></li>
+                            <li><a class="sub_menu" href="#">경영보고서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bg_gnb_sub"></div>
+            </nav>
+
+            <ul class="lnb">
+                <li><a class="lnb_menu" href="#">고객지원</a></li>
+                <li><a class="lnb_menu" href="#">사이트맵</a></li>
+                <li><a class="lnb_menu" href="#">ENGLISH</a></li>
+            </ul>
+        </header>
+
+        <!--************************************************* 01 - SLIDE ******************************************************-->
+        <section class="slide_wrap section">
+            <ul class="slide">
+                <li class="slide_img on" id="slide_img1">
+                    <div class="slide_text_box">
+                        <h2 class="slide_tit"><strong>조선해양산업의 미래</strong><br>삼성중공업</h2>
+                        <p class="slide_txt">유조선과 대형 컨테이너선,<br class="br_s_800 br_s_500"> 셔틀탱거, LNG선과 FSRU<br class="br_s_800 br_s_500"><span class="br_s_default"></span>드릴십, 해양플랫폼과 FPSO, FLNG</p>
+                    </div>
+                </li>
+                <li class="slide_img" id="slide_img2">
+                    <div class="slide_text_box">
+                        <h2 class="slide_tit"><strong>고기술, 고부가가치선</strong><br class="br_s_500"> 으로 <br class="br_s_800"><span class="br_s_default"></span>한걸음<br class="br_s_500"> 앞서나갑니다.</h2>
+                        <p class="slide_txt">
+                            삼성중공업은 1974년 창립 이래 세계 유수의 해운선사로부터<br class="br_s_800"> 1,249척 ( 2019년 12월 기준 ) 의 선박을 수주하여<span class="br_s_default"></span><br class="br_s_800">
+                            그 중 1,135척을 성공적으로 인도하며<br class="br_s_800"> 뛰어난 기술력과 우수한 품질을 인정받고 있습니다.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide_img" id="slide_img3">
+                    <div class="slide_text_box">
+                        <h2 class="slide_tit"><strong>새로운 선박건조</strong> 의 <br class="br_s_500">역사 <span class="br_s_default"></span><br class="br_s_800">삼성중공업이<br class="br_s_500"> 만듭니다.</h2>
+                        <p class="slide_txt">
+                            삼성중공업은 이제까지 세계 유수의 오일메이저에서 발주한<br class="br_s_800"> 총 16기의 FPSO를<span class="br_s_default"></span>
+                            성공적으로 건조함으로써<br class="br_s_800"> 독보적인 기술력을 인정받고 있습니다.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide_img" id="slide_img4">
+                    <div class="slide_text_box">
+                        <h2 class="slide_tit">탄탄한 기술력과<br class="br_s_500"> 축적된 경험으로<br class="br_s_500"><span class="br_s_default"></span><br class="br_s_800"><strong>‘새로운 가치’</strong>를<br class="br_s_500"> 창조합니다.</h2>
+                        <p class="slide_txt">
+                            FLNG로 해양플랜트 설비시장 선점, 세계 최다 FPSO 건조실적,<br class="br_s_800"> 고부가가치의 해양구조물<span class="br_s_default"></span>
+                            생산으로 기술력 축적. 세계 시장에서 빛나는 이름, 삼성중공업.
+                        </p>
+                    </div>
+                </li>
+                <li class="slide_img" id="slide_img5">
+                    <div class="slide_text_box">
+                        <h2 class="slide_tit">삼성중공업의 역사는<span class="br_s_default"></span><br class="br_s_800"><strong>대한민국 중공업</strong> 의 역사입니다.</h2>
+                        <p class="slide_txt">
+                            LNG선 및 초대형 여객선 건조 본격화, 선박기술 미국에 수출,<br class="br_s_800"> 기술특화로 건설업계 선도, IT사업의 추진 등<span class="br_s_default"></span><br class="br_s_800">
+                            사업의 고기술화와 고부가치화를 적극 추진함으로써<br class="br_s_800"> 국내는 물론 세계 정상을 향해 나아가고 있습니다.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn_slide" id="btn_s_left" href="#"><img src="images/btn_left.png" alt="왼쪽이동버튼"></a>
+            <a class="btn_slide" id="btn_s_right" href="#"><img src="images/btn_right.png" alt="오른쪽이동버튼"></a>
+            <div class="slide_paging">
+                <ul>
+                    <li>
+                        <a class="bullet on" href="#">
+                            <p class="bullet_num">1</p>
+                            <span class="bullet_line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bullet" href="#">
+                            <p class="bullet_num">2</p>
+                            <span class="bullet_line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bullet" href="#">
+                            <p class="bullet_num">3</p>
+                            <span class="bullet_line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bullet" href="#">
+                            <p class="bullet_num">4</p>
+                            <span class="bullet_line"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="bullet" href="#">
+                            <p class="bullet_num">5</p>
+                            <span class="bullet_line"></span>
+                        </a>
+                    </li>
+                </ul>
+                <!--페이징 움직이는 바-->
+                <span class="paging_bar"></span>
+            </div>
+        </section>
+
+
+        <!--************************************************* 02 - CM : Corporate mission ******************************************************-->
+        <section class="cm_wrap section">
+            <div class="cm_tit_box">
+                <h2 class="con_tit_sdw">Corporate mission</h2>
+                <h3 class="con_tit">Corporate mission</h3>
+                <p class="con_txt">
+                    안전하고 환경 친화적이며 경제성과<br class="br_break_500"> 편리성이 탁월한 선박 및 설비를<br class="br_break_500"><span class="br_ct_default"></span>
+                    제공함으로써 고객만족과 삶의 질<br class="br_break_500"> 향상에 기여합니다.
+                </p>
+            </div>
+            <ul class="cm_list">
+                <li class="cm_list_bg">
+                    <img class="cm_list_icon" src="images/cm_people.png" alt="인재제일 아이콘">
+                    <h4 class="cm_list_tit"><strong>인재제일</strong>People</h4>
+                    <p class="cm_list_txt">
+                        기업은 사람이다 라는<br class="br_break_1080"> 삼성의<br class="br_break_1440"><span class="br_default"></span>
+                        인재에 대한<br class="br_break_1080"> 믿음입니다.
+                    </p>
+                </li>
+                <li class="cm_list_bg">
+                    <img class="cm_list_icon" src="images/cm_excellence.png" alt="최고지향 아이콘">
+                    <h4 class="cm_list_tit"><strong>최고지향</strong>Excellence</h4>
+                    <p class="cm_list_txt">
+                        끊임없는 열정과<br class="br_break_1080"> 도전정신으로<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        항상 최고에 도전하고<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        세계최고를 향한 경쟁에서<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        당당하게 승리하기 위해<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        노력합니다.
+                    </p>
+                </li>
+                <li class="cm_list_bg">
+                    <img class="cm_list_icon" src="images/cm_change.png" alt="변화선도 아이콘">
+                    <h4 class="cm_list_tit"><strong>변화선도</strong>Change</h4>
+                    <p class="cm_list_txt">
+                        변하지 않으면 살아<br class="br_break_1440 br_break_1080"> 남을 수 없다는<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        위기의식을 바탕으로<br class="br_break_1440 br_break_1080"> 변화와 혁신을<br class=" br_break_1080"><span class="br_default"></span>
+                        실행합니다.
+                    </p>
+                </li>
+                <li class="cm_list_bg">
+                    <img class="cm_list_icon" src="images/cm_integrity.png" alt="정도경영 아이콘">
+                    <h4 class="cm_list_tit"><strong>정도경영</strong>Integrity</h4>
+                    <p class="cm_list_txt">
+                        곧은 마음과 진실되고<br class="br_break_1080"> 바른<br class="br_break_1440"> 행동으로<br class=" br_break_1080"><span class="br_default"></span>
+                        법과 윤리를<br class="br_break_1440"> 철저하게<br class="br_break_1080"> 준수함으로써<br class=" br_break_1440"><span class="br_default"></span>
+                        사회로부터<br class="br_break_1080"> 신뢰받는<br class="br_break_1440"> 영속기업이<br class=" br_break_1080"><span class="br_default"></span>
+                        되기 위해<br class="br_break_1440"> 노력합니다.
+                    </p>
+                </li>
+                <li class="cm_list_bg">
+                    <img class="cm_list_icon" src="images/cm_co_prosperity.png" alt="상생추구 아이콘">
+                    <h4 class="cm_list_tit"><strong>상생추구</strong>Co-Prosperity</h4>
+                    <p class="cm_list_txt">
+                        나보다 남을 먼저<br class="br_break_1440 br_break_1080"> 생각한다는 삼성의<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        기본 철학으로,<br class="br_break_1440 br_break_1080"> 지역사회, 국가, 인류의<br class=" br_break_1440 br_break_1080"><span class="br_default"></span>
+                        공동번영을 위해<br class="br_break_1080"> 노력합니다.
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+        <!--************************************************* 03 - Stock : Stock Price ******************************************************-->
+        <section class="stock_wrap section">
+            <div class="stock_tit_box">
+                <h2 class="con_tit_sdw">Stock Price</h2>
+                <h3 class="con_tit">Stock Price</h3>
+                <p class="con_txt">
+                    삼성중공업의 실시간 주가정보를<br class="br_break_500"> 확인하세요.
+                </p>
+            </div>
+            <div class="stock_chart_box">
+                <div class="stock_chart_tit">삼성중공업(010140)</div>
+                <div id="stock_chart" class="stock_chart"></div>
+            </div>
+            <div class="stock_con_box">
+                <div class="stock_today">
+                    <div class="today_price">
+                        <h4 class="today_price_tit">현재가</h4>
+                        <span class="today_price_val">5,230</span>
+                    </div>
+                    <div class="stock_contrast">
+                        <h5 class="contrast_tit">전일대비<br>등락</h5>
+                        <span class="contrast_val"><img src="images/icon_arrow_down_blue.png" alt="하락"> 190<br>- 3.15%</span>
+                    </div>
+                </div>
+                <table class="stock_table">
+                    <caption class="stock_table_tit">체결시간 2020-09-22 15:53 기준</caption>
+                    <thead>
+                        <tr class="stock_table_header">
+                            <th>시가(원)</th>
+                            <th>고가(원)</th>
+                            <th>저가(원)</th>
+                            <th>거래량(주)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="stock_table_body">
+                            <td class="table_blue">5,400</td>
+                            <td class="table_red">5,440</td>
+                            <td class="table_blue">5,210</td>
+                            <td>4,009,155</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a class="btn_more" href="#">자세히보기<img class="icon_arrow_more" src="images/icon_more.png" alt="자세히보기"></a>
+        </section>
+
+
+        <!--************************************************* 04 - News ******************************************************-->
+        <section class="news_wrap section">
+            <div class="news_tit_box">
+                <h2 class="con_tit_sdw">News</h2>
+                <h3 class="con_tit">News</h3>
+                <p class="con_txt">
+                    삼성중공업의 현재 소식을 전합니다.
+                </p>
+            </div>
+            <ul class="news_list">
+                <li>
+                    <div class="news_img" id="news_img1">
+                        <h4 class="news_tit">삼성重, 업계 최초 LNG 액화<br>기술 선급 인증</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼성중공업이 조선업계 최초로 대형 해양 설비의 핵심인 '천연가스 액화공정(Natural Gas Liquefaction Cycle)' 기술 개발에 성공하고, 미국 선급인 ABS로부터 상세 설계 인증(Detailed Design Approval)을 획득했다고 1일 밝혔습니다.
+                        </p>
+                        <div class="news_date">2020.09.01</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="news_img" id="news_img2">
+                        <h4 class="news_tit">삼성重, 업계 최초 3D 설계<br>선급 인증 기반 구축</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼성중공업이 업계 최초로 미국 선급인 ABS와 '3D 모델 기반 선박 설계 승인 프로세스'를 구축했다고 27일 밝혔습니다.
+                        </p>
+                        <div class="news_date">2020.07.27</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="news_img" id="news_img3">
+                        <h4 class="news_tit">삼성重, 연료전지 선박으로<br>10년 미래 준비한다</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼성중공업이 미래 친환경 선박 시장을 선점하기 위해 연료전지 적용 선박 개발에 더욱 박차를 가하고 있습니다.
+                        </p>
+                        <div class="news_date">2020.06.30</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="news_img" id="news_img4">
+                        <h4 class="news_tit">삼성重, 카타르發 대규모<br>LNG선 건조 예약</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼삼성중공업이 카타르 페트롤리움(Qatar Petroleum, 이하 QP)社와 대규모 LNG선 발주 권리를 보장하는 약정서(Deed of Agreement)를 체결했다고 2일 밝혔습니다. 남준우 삼성중공업 사장과 사드 쉐리다 알카비(Saad Sherida Al-Kabbi) QP CEO 겸 카타르 에너지부 장관은 1일 서울과 카타르를 화상으로 연결해 약정서 체결 기념 행사를 언택트로 진행하였습니다.
+                        </p>
+                        <div class="news_date">2020.06.02</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="news_img" id="news_img5">
+                        <h4 class="news_tit">삼성重, 선급이 인증한 세계<br>최초 스마트 셔틀탱커 탄생</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼성중공업이 거제조선소에서 건조한 15만톤급 셔틀탱커 '이글 페트롤리나(Eagle Petrolina)'호를 싱가포르 선사 AET 탱커스에 성공적으로 인도했다고 28일 밝혔습니다.
+                        </p>
+                        <div class="news_date">2020.05.28</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="news_img" id="news_img6">
+                        <h4 class="news_tit">삼성重, 수출입 안전관리<br>최고기업 인증</h4>
+                    </div>
+                    <div class="news_con">
+                        <p class="news_txt">
+                            삼성중공업은 최근 관세청이 주관한 수출입 안전관리 우수업체(AEO, Authorized Economic Operator) 인증 심사에서 조선업계 최초로 최고 등급인 AAA를 취득했다고 29일 밝혔습니다.
+                        </p>
+                        <div class="news_date">2020.04.29</div>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn_more" href="#">자세히보기<img class="icon_arrow_more" src="images/icon_more.png" alt="자세히보기"></a>
+        </section>
+
+        <!--************************************************* 05 - RF : Reference ******************************************************-->
+        <section class="rf_wrap section">
+            <div class="rf_tit_box">
+                <h2 class="con_tit_sdw">Reference</h2>
+                <h3 class="con_tit">Reference</h3>
+                <p class="con_txt">
+                    필요한 정보를 참조하세요.
+                </p>
+            </div>
+            <div class="rf_list_box">
+                <ul class="rf_list">
+                    <li>
+                        <a class="rf_con_box" href="#">
+                            <img class="rf_icon" src="images/rf_icon1.png" alt="홍보영상">
+                            <span class="rf_tit">홍보영상</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rf_con_box" href="#">
+                            <img class="rf_icon" src="images/rf_icon2.png" alt="거제조선소 가상투어">
+                            <span class="rf_tit">거제조선소<br>가상투어</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rf_con_box" href="#">
+                            <img class="rf_icon" src="images/rf_icon3.png" alt="경영보고서">
+                            <span class="rf_tit">경영보고서</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rf_con_box" href="#">
+                            <img class="rf_icon" src="images/rf_icon4.png" alt="채용정보">
+                            <span class="rf_tit">채용정보</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rf_con_box" href="#">
+                            <img class="rf_icon" src="images/rf_icon5.png" alt="내방신청">
+                            <span class="rf_tit">내방신청</span>
+                        </a>
+                    </li>
+                </ul>
+                <span class="rf_line"></span>
+            </div>
+        </section>
+
+        <!--************************************************* FOOTER ******************************************************-->
+        <footer class="footer_wrap">
+            <div class="footer_area">
+                <img class="footer_logo" src="images/logo_footer.png" alt="로고">
+                <div class="footer_con">
+                    <nav class="footer_t">
+                        <ul class="footer_nav">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보처리기기</a></li>
+                            <li><a href="#">운영/관리 방침</a></li>
+                            <li><a href="#">이메일주소 무단수집거부</a></li>
+                            <li><a href="#">보안신고</a></li>
+                            <li><a href="#">오픈소싱(신규거래)</a></li>
+                            <li><a href="#">윤리경영(부정제보)</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer_b">
+                        <div class="footer_b_left">
+                            <address>경기도 성남시 분당구 판교로 227번길 23 | 대표전화: 031-5171-7000</address>
+                            <div class="copy">Copyright (c) 2017 Samsung Heavy Industries co., ltd. All rights reserved.</div>
+                        </div>
+                        <select name="fm_site" id="fm_site">
+                            <option value="fs">Family Site</option>
+                            <option value="sys">S&#38;SYS</option>
+                            <option value="hotel">거제삼성호텔</option>
+                            <option value="focus">FOCUS</option>
+                            <option value="buy">구매업무</option>
+                            <option value="siber">사이버감사팀</option>
+                            <option value="visit">내방신청</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

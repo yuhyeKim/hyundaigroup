@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(common.css);
+@import url(core.css);
+
+/****************************************** COMPANY INFO ***********************************************/
+
+/* sub_contents */
+.sub_contents {width: 1440px; max-width: 100%; margin: 0 auto; padding: 90px 4.6875%;}
+.sub_con_tit {font-size: 40px; font-weight: 400;}
+.sub_con_txt {line-height: 30px; margin-top: 30px;}
+.sub_con_txt > strong {font-size: 30px; font-weight: 400; color: #666;}
+.sub_con_txt > strong > span {display: inline-block;}
+.blue_txt {color: #0e4194;}
+
+.s1920 {display: block;}
+
+.summary_table {border-collapse: collapse; width: 100%;}
+.summary_table_tit {font-size: 14px; text-align: right; margin-bottom: 5px;}
+.summary_table tr:first-child th, .summary_table tr:first-child td {border-top: solid 3px #0e4194;}
+.summary_table th, .summary_table td {border-bottom: solid 1px #ccc; padding: 10px;}
+.summary_table th {width: 150px; background-color: #f6f6f6; text-align: left; padding-left: 20px;}
+
+#mobile_summary_table {display: none;}
+#mobile_summary_table th {min-width: 90px;}
+#mobile_summary_table td {width: 100%;}
+
+@media only screen and (max-width: 800px){
+    
+    .sub_top_tit {font-size: 50px;}
+    
+    .location > li:nth-child(1), .location > li:nth-child(2) {display: none;}
+    .location > li {width: 50%;}
+    .location_menu {width: 100%;}
+    .location_list {width: 50%;}
+    
+    .s1920 {display: none;}
+    
+    #summary_table {display: none;}
+    #mobile_summary_table {display: block;}
+    
+}
+

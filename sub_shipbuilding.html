@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼성중공업 웹사이트에 오신것을 환영합니다.</title>
+    <link rel="stylesheet" href="css/sub_shipbuilding.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.smoothwheel.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/core.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <!--************************************************* HEADER ******************************************************-->
+        <header class="header_wrap">
+            <h1 class="header_logo"><a href="/"><img src="images/logo_header.png" alt="상단로고"></a></h1>
+            <nav>
+                <a class="ham_menu" href="#">
+                    <span class="ham_line"></span>
+                    <span class="ham_line"></span>
+                    <span class="ham_line"></span>
+                </a>
+                <ul class="gnb">
+                    <li>
+                        <a class="menu" href="#">회사소개</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">기업정보</a></li>
+                            <li><a class="sub_menu" href="#">CEO</a></li>
+                            <li><a class="sub_menu" href="#">거제조선소 소개</a></li>
+                            <li><a class="sub_menu" href="#">사업장안내</a></li>
+                            <li><a class="sub_menu" href="#">내방신청</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">제품 / 기술</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">조선/해양</a></li>
+                            <li><a class="sub_menu" href="#">기술개발</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">투자정보</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">재무정보</a></li>
+                            <li><a class="sub_menu" href="#">주가정보</a></li>
+                            <li><a class="sub_menu" href="#">IR자료실</a></li>
+                            <li><a class="sub_menu" href="#">지배구조</a></li>
+                            <li><a class="sub_menu" href="#">공시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">PR센터</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">뉴스</a></li>
+                            <li><a class="sub_menu" href="#">선박기초상식</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">인재채용</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">채용공고</a></li>
+                            <li><a class="sub_menu" href="#">입사지원가이드</a></li>
+                            <li><a class="sub_menu" href="#">인사제도</a></li>
+                            <li><a class="sub_menu" href="#">채용문의</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu" href="#">지속가능경영</a>
+                        <ul class="gnb_sub">
+                            <li><a class="sub_menu" href="#">안전경영</a></li>
+                            <li><a class="sub_menu" href="#">준법경영</a></li>
+                            <li><a class="sub_menu" href="#">윤리경영</a></li>
+                            <li><a class="sub_menu" href="#">나눔경영</a></li>
+                            <li><a class="sub_menu" href="#">경영보고서</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bg_gnb_sub"></div>
+            </nav>
+
+            <ul class="lnb">
+                <li><a class="lnb_menu" href="#">고객지원</a></li>
+                <li><a class="lnb_menu" href="#">사이트맵</a></li>
+                <li><a class="lnb_menu" href="#">ENGLISH</a></li>
+            </ul>
+        </header>
+
+        <!--************************************************* 01 - TOP ******************************************************-->
+        <section class="sub_top">
+            <div class="sub_top_text_box">
+                <h1 class="sub_top_tit">제품 / 기술</h1>
+                <div class="sub_top_txt">
+                    세계 최고의 기술력을 바탕으로 한<br>
+                    고기술 고부가가치 선박건조 세계 1위<br>
+                    삼성중공업이 세계 조선시장의<br>
+                    새 역사를 창조해 나가겠습니다.
+                </div>
+            </div>
+        </section>
+        <!--************************************************* 02 - SUB NAV ******************************************************-->
+        <nav class="sub_nav">
+            <ul class="location">
+                <li>
+                    <a href="#" class="location_home"><img src="images/icon_home.png" alt="홈 바로가기"></a>
+                </li>
+                <li>
+                    <a href="#" class="location_menu" id="location_menu">제품 / 기술</a>
+                    <ul class="location_list" id="location_list">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">제품 / 기술</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">PR센터</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">지속가능경영</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="location_menu" id="location_change_menu" href="#">조선 / 해양</a>
+                    <ul class="location_list" id="location_change_list">
+                        <li><a href="#">조선 / 해양</a></li>
+                        <li><a href="#">기술개발</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="location_menu" id="location_change_sub_menu" href="#">분야개요</a>
+                    <ul class="location_list" id="location_change_sub_list">
+                        <li><a href="#">분야개요</a></li>
+                        <li><a href="#">제품소개</a></li>
+                        <li><a href="#">주요실적</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!--************************************************* 03 - SUB CONTENTS ******************************************************-->
+        <section class="sub_contents">
+            <h2 class="sub_con_tit">분야개요</h2>
+            <p class="sub_con_txt">
+                <strong><span class="blue_txt">고기술, 고부가가치선</span> 으로<br>한걸음 앞서 나갑니다. </strong>
+                <br><br>
+                <b class="blue_txt">조선사업</b><br>
+                삼성중공업은 1974년 창립 이래 세계 유수의 해운선사로부터 1,249척(2019년 12월 기준)의 선박을 수주하여 그 중 1,135척을 성공적으로 인도하며 뛰어난 기술력과 우수한 품질을 인정받고 있습니다.<br>
+                1995년 국내 최초로 셔틀탱커를 건조한 이래 전세계에서 발주된 셔틀탱커 138척 가운데 61척을 수주해 시장 점유율 44%를 장악하며 압도적인 품질 경쟁력을 입증하고 있습니다.<br>
+                가스 체인 부문에서는 2008년 세계 최대 크기인 266,200㎥의 LNG선을, 2011년에는 국내 업계 최초로 멤브레인형 LNG선 화물창을 독자 개발함으로써 LNG선 건조 경쟁력을 한층 끌어 올렸습니다.<br>
+                <br>
+                2013년 이후에는 연비를 혁신적으로 개선한 '친환경 고효율 엔진 LNG선'을 건조하였으며, 2014년에는 세계 최초로 에탄운반선을 수주하며 앞선 기술력을 선보이고 있습니다.<br>
+                또한, 2017년에는 23,000TEU급 세계 최대 컨테이너선을 수주하는 등 고기술·고부가가치선 시장을 선도하고 있습니다.<br>
+                <br>
+                <b class="blue_txt">해양사업</b><br>
+                삼성중공업은 드릴십, FPSO 분야에서 세계 최다 건조실적을 보유하고 있습니다. 또한 고도의 안정성과 기술력을 필요로 하는 고정식 해양플랫폼, TLP, 부유식 해상구조물 등<br>
+                해양개발설비 시장에서도 축적된 선박 건조 기술을 바탕으로 세계 주요 오일 메이저 기업들로부터 인정을 받고 있습니다.<br>
+                <br>
+                한편 삼성중공업은 해양개발설비의 핵심이라 할 수 있는 탑사이드 설계 및 시공 능력을 확보하면서 우수한 턴키 제작 능력을 보여주고 있습니다.<br>
+                러시아 사할린 에너지 인베스트먼트社로부터 수주한 세계 최대 규모 해양플랫폼과 프랑스 토탈(Total)社로부터 수주한 세계 최대 규모의 에지나 FPSO가 대표적인 성과이며,<br>
+                2010년에는 러시아 가즈플롯(Gazflot)社로부터 수주한 원유시추설비의 상부구조물과 하부구조물을 해상에서 합체하는 공법을 선보였습니다.<br>
+                <br>
+                특히 삼성중공업은 해상에서 LNG를 생산할 수 있는 FLNG와 같은 신시장 개척에 앞장서고 있습니다.<br>
+                2011년에는 연간 360만톤 생산이 가능한 세계 최초이자 최대 규모의 FLNG를 로열더치셸(Royal Dutch- Shell)社로부터 수주해 2017년 성공적으로 인도하였고<br>
+                뒤이어 페트로나스(Petronas)社로부터 수주한 FLNG도 2020년 인도하였습니다. 2017년에는 ENI社 수주도 성공하여 FLNG 시장에서 독보적인 경쟁력을 확보하고 있습니다.<br>
+                <br>
+                <b class="blue_txt">실적</b> ( 2019.12.31기준 )
+            </p>
+           
+        </section>
+
+
+
+        <!--************************************************* FOOTER ******************************************************-->
+        <footer class="footer_wrap">
+            <div class="footer_area">
+                <img class="footer_logo" src="images/logo_footer.png" alt="로고">
+                <div class="footer_con">
+                    <nav class="footer_t">
+                        <ul class="footer_nav">
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">영상정보처리기기</a></li>
+                            <li><a href="#">운영/관리 방침</a></li>
+                            <li><a href="#">이메일주소 무단수집거부</a></li>
+                            <li><a href="#">보안신고</a></li>
+                            <li><a href="#">오픈소싱(신규거래)</a></li>
+                            <li><a href="#">윤리경영(부정제보)</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer_b">
+                        <div class="footer_b_left">
+                            <address>경기도 성남시 분당구 판교로 227번길 23 | 대표전화: 031-5171-7000</address>
+                            <div class="copy">Copyright (c) 2017 Samsung Heavy Industries co., ltd. All rights reserved.</div>
+                        </div>
+                        <select name="fm_site" id="fm_site">
+                            <option value="fs">Family Site</option>
+                            <option value="sys">S&#38;SYS</option>
+                            <option value="hotel">거제삼성호텔</option>
+                            <option value="focus">FOCUS</option>
+                            <option value="buy">구매업무</option>
+                            <option value="siber">사이버감사팀</option>
+                            <option value="visit">내방신청</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
