@@ -17,7 +17,7 @@ $(document).ready(function () { //////// JQB ///////////////////////////////
 
     $(window).resize(function () {
 
-        //window.location.reload();
+        window.location.reload();
 
         wdwWidth = $(window).width();
         mainWidth = document.querySelector(".wrap").clientWidth;
@@ -34,7 +34,7 @@ $(document).ready(function () { //////// JQB ///////////////////////////////
 
     // 6.탑메뉴 변경 실행여부 체크 상태 변수
     var headerSts = false; //false-실행전, true-실행후
-    var scTop;
+    var scTop = $(".wrap").scrollTop();
 
     if (pgnm.indexOf("sub") === 0) {
         var cmPos = $(".sub_nav").offset().top;

@@ -9,7 +9,7 @@
     .br_break_1440 {display: block;}
     
     
-    .btn_more {top: 91vh;}
+   /* .btn_more {top: 91vh;}*/
     
     .news_wrap > .btn_more {left: 69.8vw;}
         
@@ -30,11 +30,11 @@
     .br_break_1440 {display: none;}
     .br_break_1080 {display: block;}
     
-    .stock_wrap {height: 110%;}
-    .stock_con_box {display: block;}
+    .stock_wrap {min-height: 1040px;}
+    .stock_con_box {display: block; top: 65%;}
     .stock_table {width: 100%; margin-top: 2vh;}
     
-    .btn_more {top: 101vh; left: 20vw;}
+    .btn_more {top: 87%; left: 20vw;}
 
 }
 
@@ -67,11 +67,11 @@
     .stock_tit_box > .con_tit_sdw {top: 15%;}
     .stock_tit_box > .con_tit {top: 20%;}
     .stock_tit_box > .con_txt {top: 26%;}        
-    .stock_chart_box {top: 35%; min-height: 200px;}
+    .stock_chart_box {top: 35%;}
     .stock_chart_tit {font-size: 12px; top: -18%;}
-    .stock_con_box {top: 60%;}
+    .stock_con_box {top: 70%;}
     .stock_contrast > * {line-height: normal;}
-    .btn_more {top: 80%;}
+    .btn_more {top: 91%;}
     .today_price_tit, .today_price_val {font-size: 20px;}
     
     .news_wrap {height: 164vh/*2524px*/; min-height: 1400px;}
@@ -99,7 +99,7 @@
     .rf_line {top: 73px;}    
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
     
     .br_s_800 {display: none;}
     .br_s_500 {display: block;}
@@ -109,9 +109,9 @@
     .slide_tit, .slide_tit strong {font-size: 30px;}
     .btn_slide {width: 44px;}
     
-    .con_tit_sdw {font-size: 33px;}
-    .con_tit {font-size: 27px; top: 13vh;}
-    .con_txt {top: 18vh; font-size: 14px;}
+    .con_tit_sdw {font-size: 33px; top: 4.5%}
+    .con_tit {font-size: 27px; top: 5.5%;}
+    .con_txt {top: 8%; font-size: 14px;}
     
     .br_ct_default {display: none;}
     .br_break_500 {display: block;}
@@ -119,16 +119,17 @@
     .cm_wrap {min-height: 1847px;}
     .cm_list {width: 250px;}
     
-    .stock_wrap {height: 118%; min-height: 1040px;}
-    .stock_tit_box > .con_tit {top: 17%;}
-    .stock_tit_box > .con_txt {top: 21%;}
-    .stock_chart_tit {font-size: 12px; top: -11%;}
-    .stock_chart_box {top: 31%;}
-    .stock_con_box {width: 100%; top: 59%;}
-    .stock_today {display: block; padding-left: 50px;}
+    .stock_wrap {height: 700px; min-height: 700px;}
+    .stock_tit_box > .con_tit_sdw {top: 20%;}
+    .stock_tit_box > .con_tit {top: 24%;}
+    .stock_tit_box > .con_txt {top: 29%;}
+/*    .stock_chart_tit {font-size: 12px; top: -11%;}*/
+    .stock_chart_box {display: none;}
+    .stock_con_box {width: 100%; top: 39%;}
+    .stock_today {display: flex; justify-content: center;}
     .today_price {margin-bottom: 15px;}
     .stock_table {margin-top: 10%;}
-    .btn_more {top: 85%;}
+    .btn_more {top: 70%; left: 11%;}
     
     .news_wrap {height: 283%; min-height: 2400px;}
     .news_tit_box > .con_tit {top: 5%;}
@@ -138,6 +139,7 @@
     .news_list > li {width: 100%;}
     
     .rf_wrap {height: 130%; min-height: 1190px;}
+    .rf_tit_box > .con_tit_sdw {top: 0;}
     .rf_tit_box > .con_tit {top: 5vh;}
     .rf_tit_box > .con_txt {top: 10vh;}
     .rf_list_box {top: 15%;}
@@ -158,8 +160,28 @@
     .footer_b {display: block;}
 }
 
+/************************************************ SUB *******************************************/
 
-
+@media only screen and (max-width: 800px){
+    
+    .sub_top_tit {font-size: 50px;}
+    
+    .location > li:nth-child(1), .location > li:nth-child(2) {display: none;}
+    .location > li {width: 50%;}
+    .location_menu {width: 100%;}
+    .location_list {width: 50%;}
+    
+    .s1920 {display: none;}
+    
+    /* SHIP BUILDING */
+    .progress_tit_box {display: block;}
+    .progress_bar_tit_list > li {padding-left: 2px; font-size: 12px;}
+    .line_tit {width: 30px;}
+    .progress_name {font-size: 14px;}
+    
+    
+    
+}
 
 
 

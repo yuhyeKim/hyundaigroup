@@ -128,7 +128,7 @@ $(document).ready(function () {
 
             });
             
-            slide.find("li").eq(1).addClass("on");
+            slide.find("li").eq(diff).addClass("on");
 
         }
 

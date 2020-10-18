@@ -3,8 +3,83 @@
 @import url(common.css);
 @import url(core.css);
 
-/****************************************** COMPANY INFO ***********************************************/
+/****************************************** SHIP BUILDING ***********************************************/
 
 /* sub_top */
 .sub_top {background-image: url(../images/sub_top_company_shipbuilding.jpg);}
+
+/* progress_wrap */
+.progress_wrap {border-bottom: 2px solid #666; padding-bottom: 20px; margin: 50px 0;}
+.progress_tit_box {display: flex; justify-content: space-between; border-bottom: 2px solid #666; padding-bottom: 10px;}
+.progress_tit {font-weight: 500; letter-spacing: normal;}
+.progress_bar_tit_list > li {display: inline-block; vertical-align: middle; padding-left: 10px; font-size: 14px; letter-spacing: normal;}
+.progress_bar_tit_list > li:nth-child(2) {color: #0e4194}
+.progress_bar_tit_list > li:nth-child(4) {color: #61a5f9}
+.line_tit {width: 60px; height: 4px;}
+.line_tit.first {background-color: #0e4194;}
+.line_tit.second {background-color: #61a5f9;}
+
+.progress_con_box {display: flex; align-items: center; height: 100px; padding: 0 20px;}
+.progress_name {width: 20%; min-width: 100px; margin-right: 50px; font-weight: 500;}
+.progress_bar_box {width: 100%;}
+.bar_bg {position: relative; width: 100%; height: 4px; background-color: #eee; margin: 35px 0;}
+
+.bar_bg > .bar {position: absolute; height: 4px;}
+.bar_bg.first > .bar {background-color: #0e4194; width: calc(56.77% + 16px);}
+.bar_bg.second > .bar {background-color: #61a5f9; width: calc(6.45% + 16px);}
+
+.bar_bg .bar_circle {position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; border-radius: 50%; box-sizing: border-box; background-color: #fff;}
+.bar_bg.first .bar_circle {border: solid 4px #0e4194;}
+.bar_bg.second .bar_circle {border: solid 4px #61a5f9;}
+
+.bar_bg .bar_value {position: absolute; top: 9px; right: -4px; width: 25px; text-align: center; letter-spacing: normal;}
+.bar_bg.first .bar_value {color: #0e4194;}
+.bar_bg.second .bar_value {color: #61a5f9;}
+
+.progress_wrap.container .num2 .bar_bg.first > .bar {width: calc(69.03% + 16px);}
+.progress_wrap.container .num2 .bar_bg.second > .bar {width: 16px;}
+
+.progress_wrap.tanker .num1 .bar_bg.first > .bar {width: calc(99.35% + 16px);}
+.progress_wrap.tanker .num1 .bar_bg.second > .bar {width: calc(5.16% + 16px);}
+.progress_wrap.tanker .num2 .bar_bg.first > .bar {width: calc(13.87% + 16px);}
+.progress_wrap.tanker .num2 .bar_bg.second > .bar {width: calc(2.25% + 16px);}
+.progress_wrap.tanker .num3 .bar_bg.first > .bar {width: calc(2.25% + 16px);}
+.progress_wrap.tanker .num3 .bar_bg.second > .bar {width: 16px;}
+.progress_wrap.tanker .num4 .bar_bg.first > .bar {width: calc(14.83% + 16px);}
+.progress_wrap.tanker .num4 .bar_bg.second > .bar {width: calc(4.83% + 16px);}
+.progress_wrap.tanker .num5 .bar_bg.first > .bar {width: calc(4.83% + 16px);}
+.progress_wrap.tanker .num5 .bar_bg.second > .bar {width: calc(1.3% + 16px);}
+
+.progress_wrap.gas .num1 .bar_bg.first > .bar {width: calc(36.77% + 16px);}
+.progress_wrap.gas .num1 .bar_bg.second > .bar {width: calc(11.93% + 16px);}
+.progress_wrap.gas .num2 .bar_bg.first > .bar {width: calc(2.9% + 16px);}
+.progress_wrap.gas .num2 .bar_bg.second > .bar {width: calc(0.32% + 16px);}
+.progress_wrap.gas .num3 .bar_bg.first > .bar {width: calc(1.93% + 16px);}
+.progress_wrap.gas .num3 .bar_bg.second > .bar {width: calc(0.96% + 16px);}
+
+.progress_wrap.rig .num1 .bar_bg.first > .bar {width: calc(18.7% + 16px);}
+.progress_wrap.rig .num1 .bar_bg.second > .bar {width: calc(1.61% + 16px);}
+.progress_wrap.rig .num2 .bar_bg.first > .bar {width: 16px;}
+.progress_wrap.rig .num2 .bar_bg.second > .bar {width: calc(0.32% + 16px);}
+.progress_wrap.rig .num3 .bar_bg.first > .bar {width: calc(0.64% + 16px);}
+.progress_wrap.rig .num3 .bar_bg.second > .bar {width: 16px;}
+
+.progress_wrap.production .num1 .bar_bg.first > .bar {width: calc(0.32% + 16px);}
+.progress_wrap.production .num1 .bar_bg.second > .bar {width: calc(0.64% + 16px);}
+.progress_wrap.production .num2 .bar_bg.first > .bar {width: calc(6.12% + 16px);}
+.progress_wrap.production .num2 .bar_bg.second > .bar {width: calc(0.32% + 16px);}
+.progress_wrap.production .num3 .bar_bg.first > .bar {width: calc(4.19% + 16px);}
+.progress_wrap.production .num3 .bar_bg.second > .bar {width: calc(0.32% + 16px);}
+.progress_wrap.production .num4 .bar_bg.first > .bar {width: calc(6.45% + 16px);}
+.progress_wrap.production .num4 .bar_bg.second > .bar {width: 16px;}
+
+.progress_wrap.other .num1 .bar_bg.first > .bar {width: calc(1.61% + 16px);}
+.progress_wrap.other .num1 .bar_bg.second > .bar {width: 16px;}
+.progress_wrap.other .num2 .bar_bg.first > .bar {width: calc(2.9% + 16px);}
+.progress_wrap.other .num2 .bar_bg.second > .bar {width: 16px;}
+.progress_wrap.other .num3 .bar_bg.first > .bar {width: calc(18.38% + 16px);}
+.progress_wrap.other .num3 .bar_bg.second > .bar {width: 16px;}
+.progress_wrap.other .num4 .bar_bg.first > .bar {width: calc(2.58% + 16px);}
+.progress_wrap.other .num4 .bar_bg.second > .bar {width: 16px;}
+
 
