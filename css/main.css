@@ -148,7 +148,7 @@
 #news_img5 {background-image: url(../images/news_img5.jpg);}
 #news_img6 {background-image: url(../images/news_img6.jpg);}
 
-.news_tit {position: absolute; top: 50%; width: 100%; transform: translateY(-50%); color: #fff; text-align: center;}
+.news_tit {position: absolute; font-size: 20px; top: 50%; width: 100%; transform: translateY(-50%); color: #fff; text-align: center;}
 .news_con {padding: 0 1vw;}
 .news_txt {white-space: normal; line-height: 3.5vh; height: 7vh; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
 .news_date {text-align: center; margin-bottom: 2vh; font-weight: 200; color: #999; letter-spacing: 0;}
